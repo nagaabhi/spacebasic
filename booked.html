@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="booked.css">
+</head>
+<style>
+    button img{
+        height: 18px;
+
+
+        
+    }
+    body{
+        text-align: center;
+        cursor: pointer;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .ratings{
+        text-align: center;
+        
+    
+        
+        
+
+    }
+    button{
+        border: none;
+        border-radius: 3px;
+        padding: 5px;
+        margin: 15px;
+        box-shadow: 1px 1px 6px  1px rgb(137, 137, 137);
+    }
+    .js-image-one,
+    .js-image-three,
+    .js-image-two,
+    .js-image-four,
+    .js-image-five{
+        display: none;
+        height: 25px;
+        text-align: center;
+        margin: auto;
+       
+        
+        
+      
+
+    }
+
+    .js-display-ratings{
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    
+</style>
+<body>
+    <div class="food-booked-confirmation">
+        <div class="info">
+            <img src="https://cdn-icons-png.flaticon.com/128/190/190411.png" alt="">
+            <p>THANKU YOUR FOOD HAVE BEEN BOOKED ENJOY THE DAY !!! </p>
+
+        </div>
+
+    </div>
+    <div class="ratings">
+        <h3>RATE OUR APP</h3>
+        <button class="rating-one" onclick="
+           displayImage1();
+             "><img src="https://cdn-icons-png.flaticon.com/128/1828/1828970.png" alt=""></button>
+        <button onclick="
+          displayImage2();
+        "><img src="https://cdn-icons-png.flaticon.com/128/1828/1828970.png" alt=""></button>
+        <button onclick="
+          displayImage3();
+        "><img src="https://cdn-icons-png.flaticon.com/128/1828/1828970.png" alt=""></button>
+        <button onclick="
+          displayImage4();
+        "><img src="https://cdn-icons-png.flaticon.com/128/1828/1828970.png" alt=""></button>
+        <button onclick="
+          displayImage5();
+        "><img src="https://cdn-icons-png.flaticon.com/128/1828/1828970.png" alt=""></button>
+
+    </div>
+    <img class="js-image-one" src="https://cdn-icons-png.flaticon.com/128/10309/10309429.png" alt="">
+    <img class="js-image-two" src="https://cdn-icons-png.flaticon.com/128/13652/13652475.png" alt="">
+    <img class="js-image-three" src="https://cdn-icons-png.flaticon.com/128/725/725105.png" alt="">
+    <img class="js-image-four" src="https://cdn-icons-png.flaticon.com/128/3129/3129282.png" alt="">
+    <img class="js-image-five" src="https://cdn-icons-png.flaticon.com/128/3121/3121106.png" alt="">
+    <p class="js-display-ratings"></p>
+    <script>
+        function displayImage1(){
+        let displayImage = document.querySelector('.js-image-one');
+        displayImage.style.display = "Block";
+        document.querySelector('.js-display-ratings').innerHTML = 'Bad Ratings';
+       
+
+        }
+        function displayImage2(){
+            let displayImage = document.querySelector('.js-image-two');
+            displayImage.style.display = "Block";
+            document.querySelector('.js-display-ratings').innerHTML = 'Average Ratings';
+
+        }
+        function displayImage3(){
+            let displayImage = document.querySelector('.js-image-three');
+            displayImage.style.display = "Block";
+            document.querySelector('.js-display-ratings').innerHTML = 'Better Ratings'
+        }
+        function displayImage4(){
+            let displayImage = document.querySelector('.js-image-four');
+            displayImage.style.display = "Block"
+            document.querySelector('.js-display-ratings').innerHTML = 'Good Ratings';
+
+
+        }
+        function displayImage5()
+        {
+            let displayImage = document.querySelector('.js-image-five');
+            displayImage.style.display = "Block";
+            document.querySelector('.js-display-ratings').innerHTML = "Best Ratings";
+        }
+        
+
+    </script>
+    
+</body>
+</html>
